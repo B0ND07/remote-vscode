@@ -1,7 +1,29 @@
 {
-  "workbench.colorTheme": "Default Dark+",
-  "git.postCommitCommand": "sync",
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": [],
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "git.autofetch": true,
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "tabnine.experimentalAutoImports": true,
+  "git.ignoreRebaseWarning": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.startupEditor": "none",
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "codeium.enableConfig": {
+    "*": true
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+  "workbench.activityBar.location": "top",
+  "diffEditor.maxComputationTime": 0
+}
+
 }
