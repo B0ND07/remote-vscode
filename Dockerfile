@@ -1,6 +1,13 @@
 # Start from the code-server Debian base image
 FROM codercom/code-server:latest
 
+# Install sudo if not already present
+USER root
+RUN apt-get update && apt-get install -y sudo
+
+# Allow passwordless sudo for the coder user
+RUN echo 'coder ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
 USER coder
 
 # Apply VS Code settings
@@ -28,6 +35,9 @@ RUN code-server --install-extension esbenp.prettier-vscode
 
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
+# Install Node.js and npm
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
