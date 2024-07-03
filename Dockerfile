@@ -36,7 +36,7 @@ RUN code-server --install-extension esbenp.prettier-vscode
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 # Install Node.js and npm
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 
 # Copy files: 
